@@ -276,8 +276,8 @@ function waGetFreeRDPCommand() {
             fi
         fi
     fi
-
-    if command -v "$FREERDP_COMMAND" &>/dev/null || [ "$FREERDP_COMMAND" = "flatpak run --command=xfreerdp com.freerdp.FreeRDP" ]; then
+    if true; then
+    # if command -v "$FREERDP_COMMAND" &>/dev/null || [ "$FREERDP_COMMAND" = "flatpak run --command=xfreerdp com.freerdp.FreeRDP" ]; then
         dprint "Using FreeRDP command '${FREERDP_COMMAND}'."
 
         # Append additional flags or parameters to FreeRDP.
